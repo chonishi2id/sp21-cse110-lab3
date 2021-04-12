@@ -6,17 +6,14 @@
     <title>Daisuke's Journal Log</title>
     <link rel = "shortcut icon"
           type = "image/jpg"
-          href = "media\Daisuke Nishioka.JPG"/>
+          href = "media/Daisuke Nishioka.JPG"/>
 
     </head>
     <body>
-      <main>
-      </main>
       <header>
         <h1>
           Daisuke's Weblog
         </h1>
-        <h2>
           <nav>
             <ul>
                <li><a href = "#Day 1">Day1</a></li>
@@ -24,14 +21,13 @@
                <li><a href = "#Day 3">Day3</a></li>
             </ul>
            </nav>
-        </h2>
         
       </header>
 
       <main>
         <h2>
-        <p>This is a journal of three (counting) days in my life.<br>
-           It's boring and kinda cringe but I hope you enjoy.</p>
+        This is a journal of three (counting) days in my life.<br>
+           It's boring and kinda cringe but I hope you enjoy.
         </h2>
         <h1>
           Day 1: 4/7/2021
@@ -45,11 +41,9 @@
               <li>I took a <strong><a href = "https://www.worldometers.info/coronavirus/">COVID</a></strong> test</li>
               <li>I took classes</li>
               <li>I sent Dr. Powell a meme</li>
-              <div>
                 <img width = 300
                      src = "media\meirl.png"
                      alt = "meirl poputepipiku"/>
-              </div>
             </ul>
           </section>
           <div>
@@ -58,12 +52,12 @@
             </h2>
               <p>I forgot to bring sunscreen so my shoulders got massively sunburnt</p>
           </div>
-          <span>
+          <section>
             <h2>
               What did I learn?
             </h2>
               <p><em>Always</em> remember to bring sunscreen when you go out wearing a tanktop</p>
-          </span>
+          </section>
         <hr>
 
         
@@ -78,16 +72,13 @@
               <li>I took classes</li>
               <li>I showed up to Kendo Practice <br>
               This track kept me going today:
-               <div>
                 <figcaption>Never Fade Away:</figcaption>
                 <audio
                   controls
-                  src = "media\Cyberpunk 2077 Never Fade Away by SAMURAI (Refused).mp3">
-               </div>
+                  src = "media/Cyberpunk 2077 Never Fade Away by SAMURAI (Refused).mp3"/>
               </li>
             </ul>
           </section>
-          <div>
             <h2>
             What happened to me?
             </h2>
@@ -95,7 +86,6 @@
               <li>I tired myself out a lot</li>
               <li>I had a really good night's sleep</li>
             </ul>
-          </div>
           <section>
             <h2>What did I learn?</h2>
             <p>I'm pretty out of shape</p>
@@ -114,10 +104,8 @@
               <li>I showed up to Japanese Language table to talk to friends</li>
               <li>I <i class = "latin">attempted</i> work on this lab</li>
               <li>I found this:</li>
-              <span>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/LJHZ15s0Tus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
-              </span>
             </ul>
           </section>
 
@@ -139,8 +127,8 @@
           </section>
           <hr>
       </main>
+
       <footer>
-      <h2>
       <details>
         <summary>List of things I still need to do</summary>
         <ul>
@@ -150,16 +138,15 @@
           <li>Actually do my homework</li>
         </ul>
       </details>
-      </h2>
 
       <h2>
         Write another log here:
       </h2>
       <form>
 
-        <label for = "Date">What is today's date:</label>
-        <input type = "date" id = "Date" date = "date" required
-          minlength = "8" maxlength = "8" size = "10"> <br> <br>
+        <label for = "logdate">What is today's date:</label>
+        <input type = "date" id = "logdate" name = "date" required
+          minlength = "2021-04-11" maxlength = "2021-07-01"> <br> <br>
 
         <label for = "feeling">How are you feeling:</label>
         <input list = "feelings" id="feeling" name = "feeling"> <br> <br>
@@ -171,15 +158,12 @@
           <option value = "terrible">
         </datalist>
 
-
-        <label for = "Activity">What did you do today:</label><br>
-        <input type = "text" id = "activity" activity = "activity" required
+        <label for = "activity">What did you do today:</label><br>
+        <input type = "text" id = "activity" name = "activity" required
           minlength = "1" maxlength = "100" size = "15"><br>
-
-          
         
-        <label for = "Happening">What happened to you:</label><br>
-        <input type = "text" id = "happening" happening = "happening" required
+        <label for = "happening">What happened to you:</label><br>
+        <input type = "text" id = "happening" name = "happening" required
           minlength = "1" maxlength = "100" size = "15"><br>
 
         <label for = "Lesson">What did you learn:</label><br>
@@ -195,8 +179,8 @@
            <label for = "no">no</label>          
          </fieldset><br>
       
-        <label for = "media type">What type of media are you embedding:</label>
-        <select name = "media" id = "media type">
+        <label for = "media_type">What type of media are you embedding:</label>
+        <select name = "media" id = "media_type">
           <option value = "">--Please choose an option--</option>
           <option value = "Image">Image</option>
           <option value = "Audio">Audio</option>
