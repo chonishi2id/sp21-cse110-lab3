@@ -7,13 +7,19 @@ body {
 /*Formatting for h1 header */
 h1 {
   color:#ffa;
-  margin-left: 20px;
+  margin: 2mm 2mm 2mm 10px;
+  padding: 1mm 1px 1% 3mm;
+  border-style:double;
+  border-color:rgb(158, 20, 7);
+  border-width:1vmin;
+  border-radius:1vmax;
 }
 
 /*Formatting for h2 header */
 h2 {
   color:burlywood;
   margin-left: 20mm;
+  padding-bottom: 1mm;
 }
 
 /*Formatting for h3 header */
@@ -29,6 +35,7 @@ p {
 }
 /*Formatting for li */
 li {
-  color: red;
+  color: rgb(27, 85, 12);
   margin-left: 5em;
+  padding-bottom:3px;
 }
