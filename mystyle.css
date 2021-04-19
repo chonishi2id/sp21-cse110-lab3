@@ -5,6 +5,7 @@ body {
   background-color:rgb(11, 6, 27);
   margin-top: 6ex;
 }
+
 @font-face {
   font-family: "merriweather", serif;
   font-family: "Noto Sans JP", sans-serif;
@@ -31,31 +32,61 @@ h1 {
   position: relative;
 }
 
+*.day {
+  font-family:fantasy;
+  display: block;
+  color:magenta;
+  margin: 2mm 2mm 2mm 10px;
+  padding: 1mm 1px 1% 3mm;
+  border-style:double;
+  border-color:rgb(158, 20, 7);
+  border-width:1vmin;
+  border-radius:1vmax;
+  text-decoration:underline;
+  text-decoration-color: rgb(110, 163, 10);
+  text-decoration-style:dashed;
+  text-decoration-thickness: 2mm;
+  text-align:center;
+  position: relative;
+  background-color: darkblue;
+}
+
 /*Formatting for h2 header */
-h2 {
+main h2 {
   display: inline-block;
   margin-top:3vmin;
   margin-bottom:1vmin;
   padding-left: 2%;
-  border-style: double;
-  border-color:blue;
-  border-width: medium;
-  
   color:burlywood;
   display: block;
   height: 5vmin;
-  width: 40vmax;
+  width: 80vmax;
   position: relative;
 }
 
-/*Formatting for h3 header */
-h3 {
-  color: rgb(160, 157, 31);
-  margin-left: 2pt;
+section > h2 {
+  display: inline-block;
+  margin-top: 2vmin;
+  margin-bottom: 1vmin;
+  padding-left: 2%;
+  border-style: double;
+  border-color: blue;
+  border-width: medium;
+
+  color: burlywood;
+  display: block;
+  height: 5vmin;
+  width: 30vmax;
+  position:relative;
 }
 
-/*Formatting for p */
-p {
+details + h2 {
+  color: teal;
+
+}
+
+/*Formatting for p and h3*/
+p, h3 {
   font-family: "merriweather", serif;
   color: rgb(27, 85, 12);
   margin-left: 5vw;
@@ -64,6 +95,8 @@ p {
   max-height: 5px;
   max-width: 40vmax;
 }
+
+/*Formatting for summary */
 summary {
   font-family:'Times New Roman', Times, serif;
   color:rgb(27, 85, 12);
@@ -79,7 +112,10 @@ legend {
   font-family:serif;
   color:rgb(27, 85, 12);
 }
-figcaption {
+
+br~figcaption {
+  background-color: navy;
+  color: crimson;
   margin-top:2mm;
   margin-bottom: 3mm;
 }
@@ -94,21 +130,31 @@ ul {
   align-items: baseline;
 }
 
+#days {
+  display: flex;
+  margin-bottom: 0mm;
+  margin-top: 0mm;
+  position: static;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 
 /*Formatting for li */
 li {
   font-family: "merriweather", serif;
   color: rgb(27, 85, 12);
   margin-left: 5em;
-  margin-bottom: 4mm;
+  margin-bottom: 10mm;
   padding-bottom:3px;
   display: block;
-  height: 5vmin;
+  height: 3vmin;
   position:static;
   flex-grow: 4;
   flex-shrink: 1;
   flex-basis: auto;
 }
+
 
 button:hover {
   background-color:blue;
@@ -124,8 +170,8 @@ audio {
 a:hover {
   background-color: yellow;
 }
-a:active {
-  background-color:purple;
+a[href*="coronavirus"]:active {
+  background-color:green;
 }
 
 @media(max-width: 1920px) {
