@@ -148,10 +148,10 @@
 
         <label for = "logdate">What is today's date:</label>
         <input type = "date" id = "logdate" name = "date" required
-          minlength = "2021-04-11" maxlength = "2021-07-01"> <br> <br>
+          minlength = "2021-04-11" maxlength = "2021-07-01"> <!--<br> <br>-->
 
         <label for = "feeling">How are you feeling:</label>
-        <input list = "feelings" id="feeling" name = "feeling"> <br> <br>
+        <input list = "feelings" id="feeling" name = "feeling"><!--<br> <br>-->
         <datalist id = "feelings">
           <option value = "great">
           <option value = "good">
@@ -160,26 +160,26 @@
           <option value = "terrible">
         </datalist>
 
-        <label for = "activity">What did you do today:</label><br>
+        <label for = "activity">What did you do today:</label>
         <input type = "text" id = "activity" name = "activity" required
-          minlength = "1" maxlength = "100" size = "15"><br>
+          minlength = "1" maxlength = "100" size = "15">
         
-        <label for = "happening">What happened to you:</label><br>
+        <label for = "happening">What happened to you:</label>
         <input type = "text" id = "happening" name = "happening" required
-          minlength = "1" maxlength = "100" size = "15"><br>
+          minlength = "1" maxlength = "100" size = "15">
 
-        <label for = "Lesson">What did you learn:</label><br>
+        <label for = "Lesson">What did you learn:</label>
         <textarea id ="Lesson" name = "lesson" rows = "5" cols = "33">I learnt...</textarea>
 
          <fieldset>
            <legend>Do you want to embed any media?</legend>
            
            <input type = "radio" id = "yes" name = "boolean">
-           <label for = "yes">yes</label><br/>
+           <label for = "yes">yes</label>
 
            <input type = "radio" id = "no" name = "boolean">
            <label for = "no">no</label>          
-         </fieldset><br>
+         </fieldset>
       
         <label for = "media_type">What type of media are you embedding:</label>
         <select name = "media" id = "media_type">
@@ -194,7 +194,6 @@
          <input type = "checkbox" id = "confirmation" name = "confirmation" >
          <label for = "confirmation">I have double-checked this log</label>
         </div>
-        <br>
         <button type="submit" class="btn btn-primary">Submit</button>"
       </form>
      </footer>
